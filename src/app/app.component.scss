@@ -1,0 +1,61 @@
+
+@import '../styles/utils';
+
+$image: 60px;
+
+.scenario {
+  height: 100%;
+  @extend %centered;
+  background: rgba(16,110,201,1);
+  color: white;
+
+  &__content {
+    max-width: 1080px;
+  }
+
+  &__header {
+    background-color: transparent;
+  }
+
+  &__name {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  &__title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+  }
+}
+
+.customer {
+  @extend %centered;
+
+  &__header {
+    opacity: .8
+  }
+
+  &__image {
+    height: $image;
+    border-radius: $image/2;
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+
+  &__footer {
+    font-size: 13px;
+    opacity: .8
+  }
+}
+
