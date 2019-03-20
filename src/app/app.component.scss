@@ -10,7 +10,7 @@ $image: 60px;
   color: white;
 
   &__content {
-    max-width: 1080px;
+    max-width: rem(768px);
   }
 
   &__header {
@@ -24,7 +24,7 @@ $image: 60px;
 
   &__title {
     color: white;
-    font-size: 32px;
+    font-size: rem(32px);
     font-weight: bold;
   }
 
@@ -54,7 +54,7 @@ $image: 60px;
   }
 
   &__footer {
-    font-size: 13px;
+    font-size: rem(13px);
     opacity: .8
   }
 }
