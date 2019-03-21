@@ -22,3 +22,11 @@ html, body {
 .something {
   color: blue
 }
+
+
+.logo-image-example {
+  background-color: black;
+  &__image {
+    height: 100px;
+  }
+}
