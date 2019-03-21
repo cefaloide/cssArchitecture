@@ -18,17 +18,3 @@
     }
   }
 }
-
-@mixin circle($d) {
-  width: rem($d);
-  height: rem($d);
-  border-radius: rem($d/2);
-}
-
-%centered{
-  display: flex; // Step 1
-  flex-direction: column; // Step 2
-  align-items: center; // Step 3
-  justify-content: center;
-  text-align: center;
-}

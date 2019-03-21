@@ -9,4 +9,16 @@ html, body {
   font-size: 32px;
 }
 
+.menu {
+  &__item {
+    cursor: pointer;
+    &--active {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
 
+.something {
+  color: blue
+}
