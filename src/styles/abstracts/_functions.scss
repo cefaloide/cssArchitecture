@@ -1,6 +1,4 @@
-$rem-baseline: 16px !default;
-$rem-fallback: false !default;
-$rem-px-only: false !default;
+
 
 @function rem-separator($list, $separator: false) {
   @if $separator == "comma" or $separator == "space" {
@@ -18,10 +16,6 @@ $rem-px-only: false !default;
   }
 
   @return if($test-list == $list, space, comma);
-}
-
-@mixin rem-baseline($zoom: 100%) {
-  font-size: $zoom / 16px * $rem-baseline;
 }
 
 @function rem-convert($to, $values...) {
@@ -52,29 +46,4 @@ $rem-px-only: false !default;
   } @else {
     @return rem-convert(rem, $values...);
   }
-}
-
-@mixin rem($properties, $values...) {
-  @if type-of($properties) == "map" {
-    @each $property in map-keys($properties) {
-      @include rem($property, map-get($properties, $property));
-    }
-  } @else {
-    @each $property in $properties {
-      @if $rem-fallback or $rem-px-only {
-        #{$property}: rem-convert(px, $values...);
-      }
-      @if not $rem-px-only {
-        #{$property}: rem-convert(rem, $values...);
-      }
-    }
-  }
-}
-
-%centered{
-  display: flex; // Step 1
-  flex-direction: column; // Step 2
-  align-items: center; // Step 3
-  justify-content: center;
-  text-align: center;
 }
