@@ -9,12 +9,29 @@ html, body {
   font-size: 32px;
 }
 
+html{
+    background-image: url("assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:white;
+}
+body{
+  background-color:rgba(255,255,255,0.3);
+}
+
 .menu {
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+  padding-top: 5px;
   &__item {
     cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
     &--active {
-      color: red;
-      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
@@ -24,9 +41,10 @@ html, body {
 }
 
 
-.logo-image-example {
-  background-color: black;
+.logo {
+  display: flex;
+  justify-content: center;
   &__image {
-    height: 100px;
+    height: 50px;
   }
 }

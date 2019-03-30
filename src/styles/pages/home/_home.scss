@@ -1,0 +1,49 @@
+.page-home {
+    height: 92%;
+    width: 100%;
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__main{
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__footer{
+        display:flex;
+        flex-direction: row;
+    }
+}
+.home-title{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.home-subtitle{
+    border-top: 3px solid white;
+    font-size: 0.9rem;
+}
+
+.home-hour{
+    font-size: 0.6rem;
+    &__value{
+        font-size: 0.8rem;
+        font-weight:bold;
+    }
+}
+.home-place{
+    font-size: 0.6rem;
+    &__value{
+        font-size: 0.8rem;
+        font-weight:bold;
+    }
+}
+
+.footer-element{
+    flex: 1;
+    text-align: center;
+}
