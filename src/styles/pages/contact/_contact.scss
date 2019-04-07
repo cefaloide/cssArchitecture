@@ -1,11 +1,6 @@
 .page--contact {
-    height: 92%;
-    width: 100%;
-    display: flex;
+    @extend .page;
     
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     &__content {
         height: 100%;
         display: flex;

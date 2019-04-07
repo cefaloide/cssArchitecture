@@ -1,6 +1,6 @@
 .page--home {
-    height: 92%;
-    width: 100%;
+    @extend .page;
+    
     &__content {
         height: 100%;
         display: flex;
